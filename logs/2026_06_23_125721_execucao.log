@@ -1,0 +1,78 @@
+2026-06-23 12:57:21,335 - INFO - ----- INICIO DO SCRIPT -----
+2026-06-23 12:57:21,335 - INFO - ====== WebDriver manager ======
+2026-06-23 12:57:22,122 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 12:57:23,028 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 12:57:23,916 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-23 12:57:29,081 - INFO - PROCESSO 2010.01.0059146/2026-39: Iniciando processamento
+2026-06-23 12:57:32,888 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização do TITULAR
+2026-06-23 12:57:55,860 - INFO - PROCESSO 2010.01.0059146/2026-39: TITULAR — possui uso: True, total: R$ 616.79
+2026-06-23 12:57:55,916 - INFO - PROCESSO 2010.01.0059146/2026-39: Incluindo documento externo — utilização do titular
+2026-06-23 12:58:10,387 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização dos DEPENDENTES
+2026-06-23 12:58:26,087 - INFO - PROCESSO 2010.01.0059146/2026-39: DEPENDENTES — possui uso: False, total: R$ 0.00
+2026-06-23 12:58:26,088 - INFO - PROCESSO 2010.01.0059146/2026-39: Incluindo memorando
+2026-06-23 12:58:59,437 - ERROR - PROCESSO 2010.01.0059146/2026-39: Erro no processamento: Message: 
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 537, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 499, in processar_processo
+    incluir_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~^
+        driver,
+        ^^^^^^^
+    ...<4 lines>...
+        nivel_acesso='Público',
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\__init__.py", line 128, in incluir_doc_sei_memo
+    inserir_conteudo_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        driver, vocativo, destinatario_nome, assunto, texto_principal
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\documentos.py", line 259, in inserir_conteudo_doc_sei_memo
+    WebDriverWait(driver, 20).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lambda d: len(d.window_handles) == 1
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-06-23 12:58:59,440 - ERROR - Erro na execução do main
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 537, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 499, in processar_processo
+    incluir_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~^
+        driver,
+        ^^^^^^^
+    ...<4 lines>...
+        nivel_acesso='Público',
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\__init__.py", line 128, in incluir_doc_sei_memo
+    inserir_conteudo_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        driver, vocativo, destinatario_nome, assunto, texto_principal
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\documentos.py", line 259, in inserir_conteudo_doc_sei_memo
+    WebDriverWait(driver, 20).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lambda d: len(d.window_handles) == 1
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

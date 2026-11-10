@@ -1,0 +1,217 @@
+2026-06-23 12:14:06,209 - INFO - ----- INICIO DO SCRIPT -----
+2026-06-23 12:14:06,210 - INFO - ====== WebDriver manager ======
+2026-06-23 12:14:07,044 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 12:14:08,496 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 12:14:09,519 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-23 12:14:15,333 - INFO - PROCESSO 2010.01.0059146/2026-39: Iniciando processamento
+2026-06-23 12:14:17,303 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização do TITULAR
+2026-06-23 12:14:42,193 - INFO - PROCESSO 2010.01.0059146/2026-39: TITULAR — possui uso: True, total: R$ 616.79
+2026-06-23 12:14:42,291 - INFO - PROCESSO 2010.01.0059146/2026-39: Incluindo documento externo — utilização do titular
+2026-06-23 12:14:52,530 - ERROR - PROCESSO 2010.01.0059146/2026-39: Erro no processamento: Iframe 'ifrVisualizacao' não encontrado por ID nem por NAME
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\core\iframes.py", line 9, in trocar_iframe
+    WebDriverWait(driver, 5).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.frame_to_be_available_and_switch_to_it((By.ID, iframe))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x106a543+103f3]
+	chromedriver!GetHandleVerifier [0x106a584+10434]
+	chromedriver!(No symbol) [0xe6a700]
+	chromedriver!(No symbol) [0xeb3bab]
+	chromedriver!(No symbol) [0xeb3dcb]
+	chromedriver!(No symbol) [0xef5b32]
+	chromedriver!(No symbol) [0xed6114]
+	chromedriver!(No symbol) [0xef339a]
+	chromedriver!(No symbol) [0xed5e66]
+	chromedriver!(No symbol) [0xea9159]
+	chromedriver!(No symbol) [0xea9f24]
+	chromedriver!GetHandleVerifier [0x12f4bba+29aa6a]
+	chromedriver!GetHandleVerifier [0x12f0119+295fc9]
+	chromedriver!GetHandleVerifier [0x131103e+2b6eee]
+	chromedriver!GetHandleVerifier [0x10837f6+296a6]
+	chromedriver!GetHandleVerifier [0x108a91d+307cd]
+	chromedriver!GetHandleVerifier [0x1072d18+18bc8]
+	chromedriver!GetHandleVerifier [0x1072ec5+18d75]
+	chromedriver!GetHandleVerifier [0x105c05f+1f0f]
+	KERNEL32!BaseThreadInitThunk [0x75915d49+19]
+	ntdll!RtlInitializeExceptionChain [0x776be12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x776be0b1+231]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\core\iframes.py", line 14, in trocar_iframe
+    WebDriverWait(driver, 5).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.frame_to_be_available_and_switch_to_it((By.NAME, iframe))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x106a543+103f3]
+	chromedriver!GetHandleVerifier [0x106a584+10434]
+	chromedriver!(No symbol) [0xe6a700]
+	chromedriver!(No symbol) [0xeb3bab]
+	chromedriver!(No symbol) [0xeb3dcb]
+	chromedriver!(No symbol) [0xef5b32]
+	chromedriver!(No symbol) [0xed6114]
+	chromedriver!(No symbol) [0xef339a]
+	chromedriver!(No symbol) [0xed5e66]
+	chromedriver!(No symbol) [0xea9159]
+	chromedriver!(No symbol) [0xea9f24]
+	chromedriver!GetHandleVerifier [0x12f4bba+29aa6a]
+	chromedriver!GetHandleVerifier [0x12f0119+295fc9]
+	chromedriver!GetHandleVerifier [0x131103e+2b6eee]
+	chromedriver!GetHandleVerifier [0x10837f6+296a6]
+	chromedriver!GetHandleVerifier [0x108a91d+307cd]
+	chromedriver!GetHandleVerifier [0x1072d18+18bc8]
+	chromedriver!GetHandleVerifier [0x1072ec5+18d75]
+	chromedriver!GetHandleVerifier [0x105c05f+1f0f]
+	KERNEL32!BaseThreadInitThunk [0x75915d49+19]
+	ntdll!RtlInitializeExceptionChain [0x776be12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x776be0b1+231]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 533, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 474, in processar_processo
+    tit_possui_uso, tit_soma_uso = _incluir_docs_titular(
+                                   ~~~~~~~~~~~~~~~~~~~~~^
+        driver, num_processo, tit_matricula, tit_nome, lista_datas
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 343, in _incluir_docs_titular
+    incluir_doc_externo(
+    ~~~~~~~~~~~~~~~~~~~^
+        driver,
+        ^^^^^^^
+    ...<6 lines>...
+        hipotese_legal='Informação Pessoal (Art. 31 da Lei nº 12.527/2011)',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\__init__.py", line 53, in incluir_doc_externo
+    trocar_iframe(driver, 'ifrVisualizacao')
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\core\iframes.py", line 18, in trocar_iframe
+    raise Exception(f"Iframe '{iframe}' não encontrado por ID nem por NAME")
+Exception: Iframe 'ifrVisualizacao' não encontrado por ID nem por NAME
+2026-06-23 12:14:52,536 - ERROR - Erro na execução do main
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\core\iframes.py", line 9, in trocar_iframe
+    WebDriverWait(driver, 5).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.frame_to_be_available_and_switch_to_it((By.ID, iframe))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x106a543+103f3]
+	chromedriver!GetHandleVerifier [0x106a584+10434]
+	chromedriver!(No symbol) [0xe6a700]
+	chromedriver!(No symbol) [0xeb3bab]
+	chromedriver!(No symbol) [0xeb3dcb]
+	chromedriver!(No symbol) [0xef5b32]
+	chromedriver!(No symbol) [0xed6114]
+	chromedriver!(No symbol) [0xef339a]
+	chromedriver!(No symbol) [0xed5e66]
+	chromedriver!(No symbol) [0xea9159]
+	chromedriver!(No symbol) [0xea9f24]
+	chromedriver!GetHandleVerifier [0x12f4bba+29aa6a]
+	chromedriver!GetHandleVerifier [0x12f0119+295fc9]
+	chromedriver!GetHandleVerifier [0x131103e+2b6eee]
+	chromedriver!GetHandleVerifier [0x10837f6+296a6]
+	chromedriver!GetHandleVerifier [0x108a91d+307cd]
+	chromedriver!GetHandleVerifier [0x1072d18+18bc8]
+	chromedriver!GetHandleVerifier [0x1072ec5+18d75]
+	chromedriver!GetHandleVerifier [0x105c05f+1f0f]
+	KERNEL32!BaseThreadInitThunk [0x75915d49+19]
+	ntdll!RtlInitializeExceptionChain [0x776be12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x776be0b1+231]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\core\iframes.py", line 14, in trocar_iframe
+    WebDriverWait(driver, 5).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.frame_to_be_available_and_switch_to_it((By.NAME, iframe))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x106a543+103f3]
+	chromedriver!GetHandleVerifier [0x106a584+10434]
+	chromedriver!(No symbol) [0xe6a700]
+	chromedriver!(No symbol) [0xeb3bab]
+	chromedriver!(No symbol) [0xeb3dcb]
+	chromedriver!(No symbol) [0xef5b32]
+	chromedriver!(No symbol) [0xed6114]
+	chromedriver!(No symbol) [0xef339a]
+	chromedriver!(No symbol) [0xed5e66]
+	chromedriver!(No symbol) [0xea9159]
+	chromedriver!(No symbol) [0xea9f24]
+	chromedriver!GetHandleVerifier [0x12f4bba+29aa6a]
+	chromedriver!GetHandleVerifier [0x12f0119+295fc9]
+	chromedriver!GetHandleVerifier [0x131103e+2b6eee]
+	chromedriver!GetHandleVerifier [0x10837f6+296a6]
+	chromedriver!GetHandleVerifier [0x108a91d+307cd]
+	chromedriver!GetHandleVerifier [0x1072d18+18bc8]
+	chromedriver!GetHandleVerifier [0x1072ec5+18d75]
+	chromedriver!GetHandleVerifier [0x105c05f+1f0f]
+	KERNEL32!BaseThreadInitThunk [0x75915d49+19]
+	ntdll!RtlInitializeExceptionChain [0x776be12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x776be0b1+231]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 533, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 474, in processar_processo
+    tit_possui_uso, tit_soma_uso = _incluir_docs_titular(
+                                   ~~~~~~~~~~~~~~~~~~~~~^
+        driver, num_processo, tit_matricula, tit_nome, lista_datas
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 343, in _incluir_docs_titular
+    incluir_doc_externo(
+    ~~~~~~~~~~~~~~~~~~~^
+        driver,
+        ^^^^^^^
+    ...<6 lines>...
+        hipotese_legal='Informação Pessoal (Art. 31 da Lei nº 12.527/2011)',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\__init__.py", line 53, in incluir_doc_externo
+    trocar_iframe(driver, 'ifrVisualizacao')
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\core\iframes.py", line 18, in trocar_iframe
+    raise Exception(f"Iframe '{iframe}' não encontrado por ID nem por NAME")
+Exception: Iframe 'ifrVisualizacao' não encontrado por ID nem por NAME

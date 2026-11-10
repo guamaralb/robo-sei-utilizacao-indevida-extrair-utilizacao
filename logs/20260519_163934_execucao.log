@@ -1,0 +1,11 @@
+2026-05-19 16:39:34,394 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 16:39:34,394 - INFO - ====== WebDriver manager ======
+2026-05-19 16:39:35,093 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:39:35,399 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:39:35,688 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 16:39:39,417 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 16:39:55,825 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: Iframe 'ifrVisualizacao' não encontrado por ID nem por NAME
+2026-05-19 16:39:55,826 - ERROR - Erro na execução do main
+2026-05-19 16:39:55,828 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)': /session/5ae047a373a5b959f32e7caaaade266a
+2026-05-19 16:39:59,896 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=55225): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/5ae047a373a5b959f32e7caaaade266a
+2026-05-19 16:40:03,995 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=55225): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/5ae047a373a5b959f32e7caaaade266a

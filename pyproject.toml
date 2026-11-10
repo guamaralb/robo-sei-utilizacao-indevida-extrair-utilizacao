@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "robo-utilizacao-indevida-extrair-utilizacao"
+version = "0.1.0"
+description = ""
+authors = ["Gustavo Amaral Bernardino <gu.amaralb@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.13,<4"
+pandas = "^2.3.3"
+openpyxl = "^3.1.5"
+webdriver-manager = "^4.0.2"
+selenium = "^4.39.0"
+python-dotenv = "^1.2.1"
+reportlab = "^4.4.10"
+sei-automacao = { path = "../../../sei-automacao", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.14.1"
+ruff = "^0.14.13"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+lint = {cmd = 'poetry run ruff check'}
+pre_format = {cmd = 'poetry run ruff check --fix'}
+format = {cmd = 'poetry run ruff format'}
+pre_run = {cmd = "poetry run task format"}
+run = 'python robo_utilizacao_indevida_extrair_utilizacao/main.py'
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ['migrations']
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT', 'FAST']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'

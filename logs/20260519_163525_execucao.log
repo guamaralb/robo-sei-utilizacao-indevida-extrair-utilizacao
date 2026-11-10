@@ -1,0 +1,8 @@
+2026-05-19 16:35:25,120 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 16:35:25,120 - INFO - ====== WebDriver manager ======
+2026-05-19 16:35:25,837 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:35:26,165 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:35:26,478 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 16:35:30,246 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 16:35:59,414 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)': /session/fb7eb2dcf100ece61da4e6021f490399
+2026-05-19 16:36:03,512 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=52276): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/fb7eb2dcf100ece61da4e6021f490399

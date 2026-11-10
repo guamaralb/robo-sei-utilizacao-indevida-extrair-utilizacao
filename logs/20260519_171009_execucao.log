@@ -1,0 +1,37 @@
+2026-05-19 17:10:09,925 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 17:10:09,925 - INFO - ====== WebDriver manager ======
+2026-05-19 17:10:10,656 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 17:10:10,957 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 17:10:11,244 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 17:10:15,053 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 17:10:18,043 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização TITULAR
+2026-05-19 17:10:41,183 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização TITULAR
+2026-05-19 17:10:52,107 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização DEPENDENTE
+2026-05-19 17:11:07,889 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização DEPENDENTE
+2026-05-19 17:11:30,777 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="selBloco"]"}
+  (Session info: chrome=148.0.7778.168); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xe87123+10a23]
+	chromedriver!GetHandleVerifier [0xe87254+10b54]
+	chromedriver!(No symbol) [0xca1e90]
+	chromedriver!(No symbol) [0xceb28a]
+	chromedriver!(No symbol) [0xceb52b]
+	chromedriver!(No symbol) [0xd2d062]
+	chromedriver!(No symbol) [0xd0d7d4]
+	chromedriver!(No symbol) [0xd2a936]
+	chromedriver!(No symbol) [0xd0d526]
+	chromedriver!(No symbol) [0xce08f9]
+	chromedriver!(No symbol) [0xce16b4]
+	chromedriver!GetHandleVerifier [0x1121ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0x111d0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0x113e4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xea1128+2aa28]
+	chromedriver!GetHandleVerifier [0xea8bbd+324bd]
+	chromedriver!GetHandleVerifier [0xe8fb28+19428]
+	chromedriver!GetHandleVerifier [0xe8fcd5+195d5]
+	chromedriver!GetHandleVerifier [0xe791cf+2acf]
+	KERNEL32!BaseThreadInitThunk [0x75a55d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77bcd83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77bcd7c1+231]
+
+2026-05-19 17:11:30,778 - ERROR - Erro na execução do main

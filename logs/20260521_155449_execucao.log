@@ -1,0 +1,31 @@
+2026-05-21 15:54:49,312 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-21 15:54:49,312 - INFO - ====== WebDriver manager ======
+2026-05-21 15:54:50,036 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:54:50,337 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:54:50,618 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-21 15:54:54,431 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-21 15:54:58,137 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização TITULAR
+2026-05-21 15:55:21,184 - ERROR - Erro ao pesquisar utilização do titular
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'VALOR PAGO'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 126, in pesquisa_uso_tit
+    tit_soma_uso = df_uso_tit['VALOR PAGO'].sum()
+                   ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'VALOR PAGO'
+2026-05-21 15:55:21,186 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: 'VALOR PAGO'
+2026-05-21 15:55:21,187 - ERROR - Erro na execução do main

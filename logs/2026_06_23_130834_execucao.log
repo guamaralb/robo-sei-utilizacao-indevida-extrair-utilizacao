@@ -1,0 +1,147 @@
+2026-06-23 13:08:34,381 - INFO - ----- INICIO DO SCRIPT -----
+2026-06-23 13:08:34,382 - INFO - ====== WebDriver manager ======
+2026-06-23 13:08:35,193 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 13:08:36,126 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 13:08:37,025 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-23 13:08:41,893 - INFO - PROCESSO 2010.01.0059146/2026-39: Iniciando processamento
+2026-06-23 13:08:45,012 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização do TITULAR
+2026-06-23 13:09:08,073 - INFO - PROCESSO 2010.01.0059146/2026-39: TITULAR — possui uso: True, total: R$ 616.79
+2026-06-23 13:09:08,122 - INFO - PROCESSO 2010.01.0059146/2026-39: Incluindo documento externo — utilização do titular
+2026-06-23 13:09:22,881 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização dos DEPENDENTES
+2026-06-23 13:09:38,794 - INFO - PROCESSO 2010.01.0059146/2026-39: DEPENDENTES — possui uso: False, total: R$ 0.00
+2026-06-23 13:09:38,794 - INFO - PROCESSO 2010.01.0059146/2026-39: Incluindo memorando
+2026-06-23 13:10:27,365 - ERROR - PROCESSO 2010.01.0059146/2026-39: Erro no processamento: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x84a543+103f3]
+	chromedriver!GetHandleVerifier [0x84a584+10434]
+	chromedriver!(No symbol) [0x64a700]
+	chromedriver!(No symbol) [0x693bab]
+	chromedriver!(No symbol) [0x693dcb]
+	chromedriver!(No symbol) [0x6d5b32]
+	chromedriver!(No symbol) [0x6b6114]
+	chromedriver!(No symbol) [0x6d339a]
+	chromedriver!(No symbol) [0x6b5e66]
+	chromedriver!(No symbol) [0x689159]
+	chromedriver!(No symbol) [0x689f24]
+	chromedriver!GetHandleVerifier [0xad4bba+29aa6a]
+	chromedriver!GetHandleVerifier [0xad0119+295fc9]
+	chromedriver!GetHandleVerifier [0xaf103e+2b6eee]
+	chromedriver!GetHandleVerifier [0x8637f6+296a6]
+	chromedriver!GetHandleVerifier [0x86a91d+307cd]
+	chromedriver!GetHandleVerifier [0x852d18+18bc8]
+	chromedriver!GetHandleVerifier [0x852ec5+18d75]
+	chromedriver!GetHandleVerifier [0x83c05f+1f0f]
+	KERNEL32!BaseThreadInitThunk [0x75915d49+19]
+	ntdll!RtlInitializeExceptionChain [0x776be12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x776be0b1+231]
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 537, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 499, in processar_processo
+    incluir_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~^
+        driver,
+        ^^^^^^^
+    ...<4 lines>...
+        nivel_acesso='Público',
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\__init__.py", line 128, in incluir_doc_sei_memo
+    inserir_conteudo_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        driver, vocativo, destinatario_nome, assunto, texto_principal
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\documentos.py", line 269, in inserir_conteudo_doc_sei_memo
+    WebDriverWait(driver, 30).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lambda d: "cke_button_off" in d.find_element(By.ID, "cke_331").get_attribute("class")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x84a543+103f3]
+	chromedriver!GetHandleVerifier [0x84a584+10434]
+	chromedriver!(No symbol) [0x64a700]
+	chromedriver!(No symbol) [0x693bab]
+	chromedriver!(No symbol) [0x693dcb]
+	chromedriver!(No symbol) [0x6d5b32]
+	chromedriver!(No symbol) [0x6b6114]
+	chromedriver!(No symbol) [0x6d339a]
+	chromedriver!(No symbol) [0x6b5e66]
+	chromedriver!(No symbol) [0x689159]
+	chromedriver!(No symbol) [0x689f24]
+	chromedriver!GetHandleVerifier [0xad4bba+29aa6a]
+	chromedriver!GetHandleVerifier [0xad0119+295fc9]
+	chromedriver!GetHandleVerifier [0xaf103e+2b6eee]
+	chromedriver!GetHandleVerifier [0x8637f6+296a6]
+	chromedriver!GetHandleVerifier [0x86a91d+307cd]
+	chromedriver!GetHandleVerifier [0x852d18+18bc8]
+	chromedriver!GetHandleVerifier [0x852ec5+18d75]
+	chromedriver!GetHandleVerifier [0x83c05f+1f0f]
+	KERNEL32!BaseThreadInitThunk [0x75915d49+19]
+	ntdll!RtlInitializeExceptionChain [0x776be12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x776be0b1+231]
+
+2026-06-23 13:10:27,367 - ERROR - Erro na execução do main
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 537, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 499, in processar_processo
+    incluir_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~^
+        driver,
+        ^^^^^^^
+    ...<4 lines>...
+        nivel_acesso='Público',
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\__init__.py", line 128, in incluir_doc_sei_memo
+    inserir_conteudo_doc_sei_memo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        driver, vocativo, destinatario_nome, assunto, texto_principal
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\sei-automacao\sei_automacao\processo\documentos.py", line 269, in inserir_conteudo_doc_sei_memo
+    WebDriverWait(driver, 30).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lambda d: "cke_button_off" in d.find_element(By.ID, "cke_331").get_attribute("class")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x84a543+103f3]
+	chromedriver!GetHandleVerifier [0x84a584+10434]
+	chromedriver!(No symbol) [0x64a700]
+	chromedriver!(No symbol) [0x693bab]
+	chromedriver!(No symbol) [0x693dcb]
+	chromedriver!(No symbol) [0x6d5b32]
+	chromedriver!(No symbol) [0x6b6114]
+	chromedriver!(No symbol) [0x6d339a]
+	chromedriver!(No symbol) [0x6b5e66]
+	chromedriver!(No symbol) [0x689159]
+	chromedriver!(No symbol) [0x689f24]
+	chromedriver!GetHandleVerifier [0xad4bba+29aa6a]
+	chromedriver!GetHandleVerifier [0xad0119+295fc9]
+	chromedriver!GetHandleVerifier [0xaf103e+2b6eee]
+	chromedriver!GetHandleVerifier [0x8637f6+296a6]
+	chromedriver!GetHandleVerifier [0x86a91d+307cd]
+	chromedriver!GetHandleVerifier [0x852d18+18bc8]
+	chromedriver!GetHandleVerifier [0x852ec5+18d75]
+	chromedriver!GetHandleVerifier [0x83c05f+1f0f]
+	KERNEL32!BaseThreadInitThunk [0x75915d49+19]
+	ntdll!RtlInitializeExceptionChain [0x776be12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x776be0b1+231]
+

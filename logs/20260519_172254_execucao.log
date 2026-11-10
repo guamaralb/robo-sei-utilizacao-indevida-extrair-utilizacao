@@ -1,0 +1,12 @@
+2026-05-19 17:22:54,502 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 17:22:54,502 - INFO - ====== WebDriver manager ======
+2026-05-19 17:22:55,184 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 17:22:55,472 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 17:22:55,776 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 17:23:00,507 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 17:23:03,048 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização TITULAR
+2026-05-19 17:23:25,840 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização TITULAR
+2026-05-19 17:23:36,673 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização DEPENDENTE
+2026-05-19 17:23:52,239 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização DEPENDENTE
+2026-05-19 17:24:19,011 - INFO - PROCESSO 2010.01.0047797/2026-39: Fim processamento
+2026-05-19 17:24:19,011 - INFO - ----- FIM DO SCRIPT -----

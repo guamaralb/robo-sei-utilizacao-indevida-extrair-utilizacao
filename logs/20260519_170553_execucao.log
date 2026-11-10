@@ -1,0 +1,36 @@
+2026-05-19 17:05:53,991 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 17:05:53,991 - INFO - ====== WebDriver manager ======
+2026-05-19 17:05:54,680 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 17:05:54,976 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 17:05:55,279 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 17:05:59,040 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 17:06:02,177 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização TITULAR
+2026-05-19 17:06:26,210 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização TITULAR
+2026-05-19 17:06:36,096 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização DEPENDENTE
+2026-05-19 17:06:52,530 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização DEPENDENTE
+2026-05-19 17:06:58,468 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xe87123+10a23]
+	chromedriver!GetHandleVerifier [0xe87254+10b54]
+	chromedriver!(No symbol) [0xca1e90]
+	chromedriver!(No symbol) [0xceb28a]
+	chromedriver!(No symbol) [0xceb52b]
+	chromedriver!(No symbol) [0xd2d062]
+	chromedriver!(No symbol) [0xd0d7d4]
+	chromedriver!(No symbol) [0xd2a936]
+	chromedriver!(No symbol) [0xd0d526]
+	chromedriver!(No symbol) [0xce08f9]
+	chromedriver!(No symbol) [0xce16b4]
+	chromedriver!GetHandleVerifier [0x1121ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0x111d0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0x113e4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xea1128+2aa28]
+	chromedriver!GetHandleVerifier [0xea8bbd+324bd]
+	chromedriver!GetHandleVerifier [0xe8fb28+19428]
+	chromedriver!GetHandleVerifier [0xe8fcd5+195d5]
+	chromedriver!GetHandleVerifier [0xe791cf+2acf]
+	KERNEL32!BaseThreadInitThunk [0x75a55d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77bcd83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77bcd7c1+231]
+
+2026-05-19 17:06:58,469 - ERROR - Erro na execução do main

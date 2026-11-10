@@ -1,0 +1,10 @@
+2026-05-19 16:58:12,932 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 16:58:12,932 - INFO - ====== WebDriver manager ======
+2026-05-19 16:58:13,690 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:58:14,012 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:58:14,335 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 16:58:20,042 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 16:58:22,699 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização TITULAR
+2026-05-19 16:58:48,853 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização TITULAR
+2026-05-19 16:59:13,108 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: Iframe 'ifrVisualizacao' não encontrado por ID nem por NAME
+2026-05-19 16:59:13,108 - ERROR - Erro na execução do main

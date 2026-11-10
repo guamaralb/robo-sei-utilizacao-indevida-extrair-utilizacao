@@ -1,0 +1,179 @@
+2026-06-23 12:28:25,764 - INFO - ----- INICIO DO SCRIPT -----
+2026-06-23 12:28:25,764 - INFO - ====== WebDriver manager ======
+2026-06-23 12:28:26,553 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 12:28:27,472 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 12:28:28,386 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-23 12:28:33,322 - INFO - PROCESSO 2010.01.0059146/2026-39: Iniciando processamento
+2026-06-23 12:28:36,067 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização do TITULAR
+2026-06-23 12:28:59,719 - ERROR - Erro ao pesquisar utilização do titular
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 123, in pesquisa_uso_tit
+    df_uso_tit.to_excel(tit_path_planilha, index=False)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\core\generic.py", line 2439, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\formats\excel.py", line 943, in write
+    writer = ExcelWriter(
+        writer,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<3 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\dados\utilizacoes\excel\Utilizacao-Titular-2557736-23\06'
+2026-06-23 12:28:59,723 - ERROR - PROCESSO 2010.01.0059146/2026-39: Erro no processamento: Cannot save file into a non-existent directory: 'C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\dados\utilizacoes\excel\Utilizacao-Titular-2557736-23\06'
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 534, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 475, in processar_processo
+    tit_possui_uso, tit_soma_uso = _incluir_docs_titular(
+                                   ~~~~~~~~~~~~~~~~~~~~~^
+        driver, num_processo, tit_matricula, tit_nome, lista_datas
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 316, in _incluir_docs_titular
+    tit_possui_uso, _, tit_soma_uso, df_uso_tit = pesquisa_uso_tit(
+                                                  ~~~~~~~~~~~~~~~~^
+        tit_matricula, lista_datas
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 123, in pesquisa_uso_tit
+    df_uso_tit.to_excel(tit_path_planilha, index=False)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\core\generic.py", line 2439, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\formats\excel.py", line 943, in write
+    writer = ExcelWriter(
+        writer,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<3 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\dados\utilizacoes\excel\Utilizacao-Titular-2557736-23\06'
+2026-06-23 12:28:59,725 - ERROR - Erro na execução do main
+Traceback (most recent call last):
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 534, in main
+    processar_processo(driver, processo)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 475, in processar_processo
+    tit_possui_uso, tit_soma_uso = _incluir_docs_titular(
+                                   ~~~~~~~~~~~~~~~~~~~~~^
+        driver, num_processo, tit_matricula, tit_nome, lista_datas
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 316, in _incluir_docs_titular
+    tit_possui_uso, _, tit_soma_uso, df_uso_tit = pesquisa_uso_tit(
+                                                  ~~~~~~~~~~~~~~~~^
+        tit_matricula, lista_datas
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\robo_utilizacao_indevida_extrair_utilizacao\main.py", line 123, in pesquisa_uso_tit
+    df_uso_tit.to_excel(tit_path_planilha, index=False)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\core\generic.py", line 2439, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\formats\excel.py", line 943, in write
+    writer = ExcelWriter(
+        writer,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<3 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\.venv\Lib\site-packages\pandas\io\common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'C:\Users\m755247\Desktop\REPOSITORIOS\scripts\sei\robo-sei-utilizacao-indevida-extrair-utilizacao\dados\utilizacoes\excel\Utilizacao-Titular-2557736-23\06'

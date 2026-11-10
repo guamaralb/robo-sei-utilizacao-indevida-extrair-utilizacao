@@ -1,0 +1,10 @@
+2026-05-21 15:49:04,781 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-21 15:49:04,781 - INFO - ====== WebDriver manager ======
+2026-05-21 15:49:05,479 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:49:05,766 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:49:06,056 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-21 15:49:10,986 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-21 15:49:14,434 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização TITULAR
+2026-05-21 15:49:36,670 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização TITULAR
+2026-05-21 15:49:36,672 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: 'VALOR A PAGAR'
+2026-05-21 15:49:36,672 - ERROR - Erro na execução do main

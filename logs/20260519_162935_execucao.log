@@ -1,0 +1,9 @@
+2026-05-19 16:29:35,185 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 16:29:35,185 - INFO - ====== WebDriver manager ======
+2026-05-19 16:29:35,879 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:29:36,192 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:29:36,480 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 16:29:40,209 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 16:29:51,527 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: Iframe 'ifrArvore' não encontrado por ID nem por NAME
+2026-05-19 16:29:51,528 - ERROR - Erro na execução do main
+2026-05-19 16:29:51,529 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)': /session/ab0c08282ccb25e3ff8e594d49aabab7

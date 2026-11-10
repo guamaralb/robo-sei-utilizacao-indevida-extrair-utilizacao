@@ -1,0 +1,13 @@
+2026-05-19 15:57:01,498 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 15:57:01,499 - INFO - ====== WebDriver manager ======
+2026-05-19 15:57:02,293 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 15:57:03,451 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 15:57:03,781 - INFO - There is no [win64] chromedriver "148.0.7778.167" for browser google-chrome "148.0.7778" in cache
+2026-05-19 15:57:03,781 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 15:57:04,438 - INFO - WebDriver version 148.0.7778.167 selected
+2026-05-19 15:57:04,451 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.167/win32/chromedriver-win32.zip
+2026-05-19 15:57:04,452 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.167/win32/chromedriver-win32.zip
+2026-05-19 15:57:04,764 - INFO - Driver downloading response is 200
+2026-05-19 15:57:05,115 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 15:57:05,569 - INFO - Driver has been saved in cache [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167]
+2026-05-19 15:57:08,320 - ERROR - Erro na execução do main

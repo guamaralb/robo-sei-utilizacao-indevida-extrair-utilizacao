@@ -1,0 +1,15 @@
+2026-06-23 13:25:20,454 - INFO - ----- INICIO DO SCRIPT -----
+2026-06-23 13:25:20,454 - INFO - ====== WebDriver manager ======
+2026-06-23 13:25:21,255 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 13:25:22,164 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-23 13:25:23,070 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-23 13:25:28,012 - INFO - PROCESSO 2010.01.0059146/2026-39: Iniciando processamento
+2026-06-23 13:25:31,865 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização do TITULAR
+2026-06-23 13:25:55,044 - INFO - PROCESSO 2010.01.0059146/2026-39: TITULAR — possui uso: True, total: R$ 616.79
+2026-06-23 13:25:55,088 - INFO - PROCESSO 2010.01.0059146/2026-39: Incluindo documento externo — utilização do titular
+2026-06-23 13:26:09,410 - INFO - PROCESSO 2010.01.0059146/2026-39: Pesquisando utilização dos DEPENDENTES
+2026-06-23 13:26:25,309 - INFO - PROCESSO 2010.01.0059146/2026-39: DEPENDENTES — possui uso: False, total: R$ 0.00
+2026-06-23 13:26:25,310 - INFO - PROCESSO 2010.01.0059146/2026-39: Incluindo memorando
+2026-06-23 13:26:45,982 - INFO - PROCESSO 2010.01.0059146/2026-39: Inserindo bloco de assinatura
+2026-06-23 13:26:48,504 - INFO - PROCESSO 2010.01.0059146/2026-39: Processamento concluído — total: R$ 616.79
+2026-06-23 13:26:48,504 - INFO - ----- FIM DO SCRIPT -----

@@ -1,0 +1,8 @@
+2026-05-19 16:23:18,536 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 16:23:18,536 - INFO - ====== WebDriver manager ======
+2026-05-19 16:23:19,307 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:23:19,610 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:23:19,913 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 16:23:25,189 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 16:23:40,648 - ERROR - PROCESSO 2010.01.0047797/2026-39: Erro no processamento: Iframe 'ifrArvore' não encontrado por ID nem por NAME
+2026-05-19 16:23:40,658 - ERROR - Erro na execução do main

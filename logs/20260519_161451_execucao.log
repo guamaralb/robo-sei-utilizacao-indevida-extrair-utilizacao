@@ -1,0 +1,6 @@
+2026-05-19 16:14:51,529 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 16:14:51,530 - INFO - ====== WebDriver manager ======
+2026-05-19 16:14:52,261 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:14:52,568 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:14:52,885 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 16:14:54,664 - ERROR - Erro na execução do main

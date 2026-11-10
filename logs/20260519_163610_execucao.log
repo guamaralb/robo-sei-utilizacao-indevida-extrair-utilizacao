@@ -1,0 +1,7 @@
+2026-05-19 16:36:10,997 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-19 16:36:10,998 - INFO - ====== WebDriver manager ======
+2026-05-19 16:36:11,659 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:36:11,967 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-19 16:36:12,250 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-19 16:36:16,121 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-19 16:36:20,104 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)': /session/09c6842fedb102928ab25fbe8d19534b

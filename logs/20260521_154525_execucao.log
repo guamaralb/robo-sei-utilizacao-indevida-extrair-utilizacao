@@ -1,0 +1,19 @@
+2026-05-21 15:45:25,703 - INFO - ----- INICIO DO SCRIPT -----
+2026-05-21 15:45:25,703 - INFO - ====== WebDriver manager ======
+2026-05-21 15:45:26,498 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:45:26,859 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:45:27,156 - INFO - There is no [win64] chromedriver "148.0.7778.178" for browser google-chrome "148.0.7778" in cache
+2026-05-21 15:45:27,156 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:45:27,809 - INFO - WebDriver version 148.0.7778.178 selected
+2026-05-21 15:45:27,814 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.178/win32/chromedriver-win32.zip
+2026-05-21 15:45:27,814 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.178/win32/chromedriver-win32.zip
+2026-05-21 15:45:29,173 - INFO - Driver downloading response is 200
+2026-05-21 15:45:29,637 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-21 15:45:30,066 - INFO - Driver has been saved in cache [C:\Users\m755247\.wdm\drivers\chromedriver\win64\148.0.7778.178]
+2026-05-21 15:45:36,275 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando processamento
+2026-05-21 15:45:39,790 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização TITULAR
+2026-05-21 15:46:04,021 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização TITULAR
+2026-05-21 15:46:15,567 - INFO - PROCESSO 2010.01.0047797/2026-39: Iniciando pesquisa utilização DEPENDENTE
+2026-05-21 15:46:31,275 - INFO - PROCESSO 2010.01.0047797/2026-39: Finalizada pesquisa utilização DEPENDENTE
+2026-05-21 15:46:59,737 - INFO - PROCESSO 2010.01.0047797/2026-39: Fim processamento
+2026-05-21 15:46:59,737 - INFO - ----- FIM DO SCRIPT -----
